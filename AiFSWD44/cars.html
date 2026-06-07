@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Cars - DriveEase</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Glide.js Stylesheets -->
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">DriveEase</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="book.html" class="btn">Book Now</a>
+    </header>
+
+    <!-- Cars Page Banner -->
+
+    <section class="cars-page-banner">
+      <div class="slider-container">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img
+                  src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800"
+                />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
+          </div>
+        </div>
+        <div class="cars-banner-content">
+          <h1>Our Rental Fleet</h1>
+
+          <p>Choose from luxury, sports, family and economy vehicles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cars Page -->
+
+    <section class="cars-page">
+      <div class="page-title">
+        <h2>Available Cars</h2>
+        <p>Find the perfect vehicle for your journey.</p>
+      </div>
+
+      <div class="cars-grid">
+        <div class="vehicle-card">
+          <img
+            src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800"
+          />
+
+          <div class="vehicle-info">
+            <h3>BMW M4</h3>
+
+            <div class="car-details">
+              <span><i class="fas fa-user"></i> 4 Seats</span>
+              <span><i class="fas fa-gas-pump"></i> Petrol</span>
+            </div>
+
+            <h4>$90 / Day</h4>
+
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <img
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800"
+          />
+
+          <div class="vehicle-info">
+            <h3>Audi RS5</h3>
+
+            <div class="car-details">
+              <span><i class="fas fa-user"></i> 4 Seats</span>
+              <span><i class="fas fa-gas-pump"></i> Petrol</span>
+            </div>
+
+            <h4>$100 / Day</h4>
+
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <img
+            src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800"
+          />
+
+          <div class="vehicle-info">
+            <h3>Mercedes AMG</h3>
+
+            <div class="car-details">
+              <span><i class="fas fa-user"></i> 5 Seats</span>
+              <span><i class="fas fa-gas-pump"></i> Petrol</span>
+            </div>
+
+            <h4>$120 / Day</h4>
+
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="vehicle-card">
+          <img
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800"
+          />
+
+          <div class="vehicle-info">
+            <h3>Tesla Model S</h3>
+
+            <div class="car-details">
+              <span><i class="fas fa-user"></i> 5 Seats</span>
+              <span><i class="fas fa-bolt"></i> Electric</span>
+            </div>
+
+            <h4>$140 / Day</h4>
+
+            <button>Rent Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 DriveEase Rental Car System</p>
+    </footer>
+    <!-- glide.js link -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      // Initialize Glide slider with enhanced configuration
+      const glide = new Glide(".glide", {
+        type: "carousel", // or "slider" for non-looping
+        startAt: 0, // start at slide 0
+        perView: 1, // show 1 slide at a time
+        focusAt: 0, // focus on the center slide
+        gap: 0, // gap between slides
+        autoplay: 4000, // autoplay every 4 seconds
+        hoverpause: true, // pause on hover
+        animationDuration: 800, // animation duration in ms
+        animationTimingFunc: "ease-in-out", // easing function
+        peek: 0, // don't peek at next/prev slides
+        keyboard: true, // enable keyboard navigation (arrow keys)
+        bound: true, // bound the dragging
+        dragThreshold: 80, // drag threshold
+        swipeThreshold: 80, // swipe threshold
+        touchRatio: 0.5, // touch ratio for dragging
+      });
+
+      glide.mount();
+
+      // Optional: Add event listeners for additional functionality
+      glide.on("move", () => {
+        console.log("Slide changed to:", glide.index);
+      });
+
+      glide.on("run.before", () => {
+        console.log("Transition starting");
+      });
+
+      glide.on("run.after", () => {
+        console.log("Transition complete");
+      });
+    </script>
+  </body>
+</html>

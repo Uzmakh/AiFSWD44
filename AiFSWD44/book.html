@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Car - DriveEase</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">DriveEase</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="book.html" class="btn">Book Now</a>
+    </header>
+
+    <!-- Booking Banner -->
+
+    <section class="booking-banner">
+      <div class="booking-banner-content">
+        <h1>Book Your Dream Car</h1>
+        <p>Complete the form below and reserve your vehicle instantly.</p>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+
+    <section class="booking-page">
+      <div class="booking-title">
+        <h2>Rental Reservation Form</h2>
+        <p>Fill in your details to confirm your booking.</p>
+      </div>
+
+      <div class="booking-form-wrapper">
+        <form class="booking-form">
+          <div class="booking-row">
+            <div class="booking-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your name" />
+            </div>
+
+            <div class="booking-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+          </div>
+
+          <div class="booking-row">
+            <div class="booking-group">
+              <label>Phone Number</label>
+              <input type="text" placeholder="Enter phone number" />
+            </div>
+
+            <div class="booking-group">
+              <label>Select Car</label>
+
+              <select>
+                <option>BMW M4</option>
+                <option>Audi RS5</option>
+                <option>Mercedes AMG</option>
+                <option>Tesla Model S</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="booking-row">
+            <div class="booking-group">
+              <label>Pickup Date</label>
+              <input type="date" />
+            </div>
+
+            <div class="booking-group">
+              <label>Return Date</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <div class="booking-group">
+            <label>Pickup Location</label>
+            <input type="text" placeholder="Enter pickup location" />
+          </div>
+
+          <div class="booking-group">
+            <label>Additional Notes</label>
+            <textarea rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="booking-btn">Confirm Booking</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 DriveEase Rental Car System</p>
+    </footer>
+  </body>
+</html>
