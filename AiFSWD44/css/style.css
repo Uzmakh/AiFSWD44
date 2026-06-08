@@ -9,15 +9,18 @@ body {
     background: #dee5eb;
 }
 
-/* h1,
-h2,
+h1 :not(cars-banner-content),
+.services-page .sec-heading,
+.sec-heading,
 h3 {
     color: #718cab;
-} */
+
+}
+
 
 /* p {
     color: #868282;
-} */
+}
 
 /* Header */
 
@@ -104,7 +107,6 @@ nav ul li a:hover {
 
 .hero-buttons {
     margin-top: 30px;
-
 }
 
 .btn-outline {
@@ -173,8 +175,13 @@ nav ul li a:hover {
 }
 
 .cars h2 {
+    color: #718cab;
     font-size: 40px;
     margin-bottom: 40px;
+}
+
+.cars h3 {
+    color: #868282;
 }
 
 .car-container {
@@ -521,7 +528,7 @@ footer p {
 
 .page-title h2 {
     font-size: 40px;
-
+    color: #718cab;
 }
 
 .page-title p {
@@ -560,13 +567,13 @@ footer p {
 }
 
 .vehicle-info h3 {
+    color: #718cab;
     margin-bottom: 15px;
 }
 
 .car-details {
     display: flex;
     justify-content: space-between;
-
     margin-bottom: 15px;
     color: #666;
 }
